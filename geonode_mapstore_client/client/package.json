@@ -25,7 +25,8 @@
   "author": "GeoSolutions",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "@mapstore/project": "1.0.21"
+    "@mapstore/project": "1.0.21",
+    "webpack-cli": "^4.10.0"
   },
   "dependencies": {
     "js-cookie": "2.2.1",
@@ -34,7 +35,7 @@
   "geonode": {
     "devServer": {
       "host": "localhost",
-      "proxyTargetHost": "localhost:8000",
+      "proxyTargetHost": "localhost",
       "protocol": "http"
     }
   },
