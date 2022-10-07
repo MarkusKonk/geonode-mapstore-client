@@ -2383,7 +2383,12 @@
                 "name": "BackgroundSelector"
             },
             {
-                "name": "HelpInfo"
+                "name": "HelpInfo",
+                "override": {
+                    "Toolbar": {
+                        "alwaysVisible": true
+                    }
+                }
             },
             {
                 "name": "Identify",
