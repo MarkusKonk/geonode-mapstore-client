@@ -2383,6 +2383,9 @@
                 "name": "BackgroundSelector"
             },
             {
+                "name": "HelpInfo"
+            },
+            {
                 "name": "Identify",
                 "cfg": {
                     "viewerOptions": {
