@@ -30,12 +30,12 @@ function HelpModal(props) {
                     onClose={()=>setOpen(false)}
                 >
                     <div className='helpInfoModal'>
-                        <h1> Watch this video to learn more about developing with MapStore: </h1>
+                        <h1> {<Message msgId="helpInfo.header"/>} </h1>
                         <iframe className='helpInfoVideo'
                             src="https://www.youtube.com/embed/ybuivDWypdQ" 
                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
                         />
-                        <h1><a href='https://docs.mapstore.geosolutionsgroup.com/en/latest/'>Or check the MapStore documentation.</a></h1>
+                        <h1><a href='https://docs.mapstore.geosolutionsgroup.com/en/latest/' target='_blank'>{<Message msgId="helpInfo.text" />}</a></h1>
                         <Button onClick={()=>setOpen(false)}>{<Message msgId="close"/>}</Button>
                     </div>
                 </ResizableModal>

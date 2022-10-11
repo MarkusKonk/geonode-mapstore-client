@@ -5,7 +5,9 @@
             "geoNode": "GeoNode"
         },
         "helpInfo": {
-                "title": "Hilfe"
+            "title": "Hilfe",
+            "header": "In diesem Video lernen Sie, wie man mit MapStore entwickelt.",
+            "text": "Oder Sie schauen sich die MapStore Dokumentation an."
         },
         "mediaEditor": {
             "imageList": {
