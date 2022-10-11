@@ -8,3 +8,8 @@
     width: 450px; 
     height: 315px;
 }
+
+.closeButton{
+    justify-content: flex-end;
+    display: flex;
+}

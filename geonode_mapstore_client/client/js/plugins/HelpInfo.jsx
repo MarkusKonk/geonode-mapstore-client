@@ -36,7 +36,12 @@ function HelpModal(props) {
                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
                         />
                         <h1><a href='https://docs.mapstore.geosolutionsgroup.com/en/latest/' target='_blank'>{<Message msgId="helpInfo.text" />}</a></h1>
-                        <Button onClick={()=>setOpen(false)}>{<Message msgId="close"/>}</Button>
+                        <div className='closeButton'>
+                            <Button onClick={()=>setOpen(false)}>
+                                {<Message msgId="close"/>}
+                            </Button>
+                        </div>
+
                     </div>
                 </ResizableModal>
             }
