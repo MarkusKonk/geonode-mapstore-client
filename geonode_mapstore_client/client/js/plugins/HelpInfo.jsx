@@ -23,12 +23,12 @@ function HelpModal(props) {
             </Button>
             {
                 open && <ResizableModal
-                    title={<div><Message msgId="saveAs" /> <Message msgId="helpInfo.title" /> <Message msgId="messages.helpInfo.title" /></div>}
+                    title={<Message msgId="helpInfo.title" />}
                     show={open} 
                     onClose={()=>setOpen(false)}
                 >
                     <div>
-                        <Button onClick={()=>setOpen(false)}>Close</Button>
+                        <Button onClick={()=>setOpen(false)}>{<Message msgId="close"/>}</Button>
                     </div>
                 </ResizableModal>
             }

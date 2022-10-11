@@ -4,6 +4,9 @@
         "geostory": {
             "geoNode": "GeoNode"
         },
+        "helpInfo": {
+            "title": "Help"
+        },
         "mediaEditor": {
             "imageList": {
                 "emptyList": "No results for this request. Try to change filter or select a different service from the input in the top right corner."
