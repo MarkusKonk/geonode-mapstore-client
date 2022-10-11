@@ -5,6 +5,8 @@ import ResizableModal from '@mapstore/framework/components/misc/ResizableModal';
 import Button from '../../MapStore2/web/client/components/misc/Button';
 import Message from '@mapstore/framework/components/I18N/Message';
 
+import './helpInfo/helpInfo.css';
+
 /**
  * Plugin for HelpInfo modal
  * @name HelpInfo
@@ -27,7 +29,13 @@ function HelpModal(props) {
                     show={open} 
                     onClose={()=>setOpen(false)}
                 >
-                    <div>
+                    <div className='helpInfoModal'>
+                        <h1> Watch this video to learn more about developing with MapStore: </h1>
+                        <iframe className='helpInfoVideo'
+                            src="https://www.youtube.com/embed/ybuivDWypdQ" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
+                        />
+                        <h1><a href='https://docs.mapstore.geosolutionsgroup.com/en/latest/'>Or check the MapStore documentation.</a></h1>
                         <Button onClick={()=>setOpen(false)}>{<Message msgId="close"/>}</Button>
                     </div>
                 </ResizableModal>
