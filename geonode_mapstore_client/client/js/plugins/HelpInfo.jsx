@@ -3,6 +3,7 @@ import { createPlugin } from '@mapstore/framework/utils/PluginsUtils';
 import { Glyphicon } from 'react-bootstrap';
 import ResizableModal from '@mapstore/framework/components/misc/ResizableModal';
 import Button from '../../MapStore2/web/client/components/misc/Button';
+import Message from '@mapstore/framework/components/I18N/Message';
 
 /**
  * Plugin for HelpInfo modal
@@ -22,6 +23,7 @@ function HelpModal(props) {
             </Button>
             {
                 open && <ResizableModal
+                    title={<div><Message msgId="saveAs" /> <Message msgId="helpInfo.title" /> <Message msgId="messages.helpInfo.title" /></div>}
                     show={open} 
                     onClose={()=>setOpen(false)}
                 >
