@@ -418,6 +418,9 @@
                 }
             },
             {
+                "name": "StaHandler"
+            },
+            {
                 "name": "Identify",
                 "cfg": {
                     "showFullscreen": true,
@@ -625,6 +628,9 @@
                         "alwaysVisible": true
                     }
                 }
+            },
+            {
+                "name": "StaHandler"
             },
             {
                 "name": "BackgroundSelector"
