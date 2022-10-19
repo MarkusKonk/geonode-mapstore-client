@@ -22,7 +22,6 @@ import {staLayerSelector} from './staHandler/selector_StaHandler';
 
 function STA(props) {
     if (props[0]) {
-        
         props[0].features = [{
             geometry: {
                 coordinates: [-97.96212, 50.40768],
