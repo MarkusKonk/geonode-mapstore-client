@@ -418,6 +418,9 @@
                 }
             },
             {
+                "name": "LayerTitleTocLineBreaker"
+            },
+            {
                 "name": "StaHandler"
             },
             {
@@ -628,6 +631,9 @@
                         "alwaysVisible": true
                     }
                 }
+            },
+            {
+                "name": "LayerTitleTocLineBreaker"
             },
             {
                 "name": "StaHandler"
@@ -2411,6 +2417,9 @@
                         "alwaysVisible": true
                     }
                 }
+            },
+            {
+                "name": "LayerTitleTocLineBreaker"
             },
             {
                 "name": "StaHandler"
