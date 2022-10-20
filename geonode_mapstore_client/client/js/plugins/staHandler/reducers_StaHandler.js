@@ -8,6 +8,7 @@ import {
  */
 
 function sta_add_features(state, action) {
+    console.log("state",state)
     switch (action.type) {
         case CREATE_STA_FEATURES:
             return assign({},state, {
