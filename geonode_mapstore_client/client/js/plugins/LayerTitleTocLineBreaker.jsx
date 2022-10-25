@@ -3,18 +3,22 @@ import { createPlugin } from '../../MapStore2/web/client/utils/PluginsUtils';
 
 function LineBreaker() {
     const defaultLayer = document.getElementsByClassName("toc-default-layer-head");
-    if (defaultLayer[0]) {
-        defaultLayer[0].style.height='auto';
-        defaultLayer[0].style.display='flow-root';
-    }
     const title = document.getElementsByClassName("toc-title");
-    if (title[0]) {
-        title[0].style.wordBreak = 'break-all';
-        title[0].style.height = 'fit-content';
-        title[0].style.width = '65%';
-        title[0].style.maxWidth = '100%';
-        title[0].style.whiteSpace = 'normal';
-    } 
+
+    if (defaultLayer && defaultLayer.length > 0 && title && title.length > 0) {
+        Object.entries(defaultLayer).forEach(element => {
+            element[1].style.height='auto';
+            element[1].style.display='flow-root';
+        });
+        Object.entries(title).forEach(element => {
+            element[1].style.wordBreak = 'break-all';
+            element[1].style.height = 'fit-content';
+            element[1].style.width = '65%';
+            element[1].style.maxWidth = '100%';
+            element[1].style.whiteSpace = 'normal';
+        });
+    }
+    
     return (
         <div></div>
     )
