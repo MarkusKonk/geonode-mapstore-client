@@ -6,6 +6,12 @@ import Button from '../../MapStore2/web/client/components/misc/Button';
 import Message from '@mapstore/framework/components/I18N/Message';
 
 import './helpInfo/helpInfo.css';
+import layerIcon from './helpInfo/layer.png';
+import addLayer from './helpInfo/addLayer.png';
+import plus from './helpInfo/plus.png';
+import arrow from './helpInfo/arrow.png';
+import burger from './helpInfo/burger.png';
+
 
 /**
  * Plugin for HelpInfo modal
@@ -28,14 +34,23 @@ function HelpModal(props) {
                     title={<Message msgId="helpInfo.title" />}
                     show={open} 
                     onClose={()=>setOpen(false)}
+                    fitContent={true}
                 >
                     <div className='helpInfoModal'>
                         <h1> {<Message msgId="helpInfo.header"/>} </h1>
-                        <iframe className='helpInfoVideo'
-                            src="https://www.youtube.com/embed/ybuivDWypdQ" 
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
-                        />
-                        <h1><a href='https://docs.mapstore.geosolutionsgroup.com/en/latest/' target='_blank'>{<Message msgId="helpInfo.text" />}</a></h1>
+                        <p>
+                            {<Message msgId="helpInfo.quickstart1" />} 
+                            <img src={layerIcon} className="icon"></img> 
+                            {<Message msgId="helpInfo.quickstart2"/>} 
+                            <img src={addLayer} className="icon"></img>
+                            {<Message msgId="helpInfo.quickstart3"/>} 
+                            <img src={plus} className="icon"></img>
+                            {<Message msgId="helpInfo.quickstart4"/>} 
+                            <img src={arrow} className="icon"></img>
+                            {<Message msgId="helpInfo.quickstart5"/>}
+                            <img src={burger} className="icon"></img>
+                            {<Message msgId="helpInfo.quickstart6"/>} <a href='https://canwin-public-docs.readthedocs.io/en/latest/CanWIN_GeoNode_Guide/>'>https://canwin-public-docs.readthedocs.io/en/latest/CanWIN_GeoNode_Guide/.</a>
+                        </p>
                         <div className='closeButton'>
                             <Button onClick={()=>setOpen(false)}>
                                 {<Message msgId="close"/>}

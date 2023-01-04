@@ -5,9 +5,14 @@
             "geoNode": "GeoNode"
         },
         "helpInfo": {
-            "title": "Hilfe",
-            "header": "In diesem Video lernen Sie, wie man mit MapStore entwickelt.",
-            "text": "Oder Sie schauen sich die MapStore Dokumentation an."
+            "title": "Information",
+            "header": "Schnellstart",
+            "quickstart1": "Um einen Layer hinzuzufügen, klicken Sie den Layers-Knopf ",
+            "quickstart2": " oben links auf Ihrem Bildschirm. Sie sehen dann zwei Knöpfe in der Mitte, klicken Sie auf den linken “Layer hinzufügen”-Knopf ",
+            "quickstart3": " . Der Katalog erscheint dann auf der rechten Seite. Sie können scrollen um den gewünschen Layer zu finden oder danach suchen. Klicken Sie den 'Plus'-Knopf ",
+            "quickstart4": " , um den Layer zur Karte hinzuzufügen. Der 'Erweitern'-Knopf ",
+            "quickstart5": " zeigt das Asbtract des Layers. Um die Karte zu drucken oder zu speichern, drücken Sie den Hamburger-button ",
+            "quickstart6": " auf der rechten Seite Ihres Bildschirms. Für eine vollständige Anleitung zur Nutzung des CanWin Kartenportal, schauen Sie bitte hier nach "
         },
         "mediaEditor": {
             "imageList": {
